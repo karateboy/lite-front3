@@ -28,8 +28,6 @@ import { VerticalNavLayout } from '@layouts'
           />
         </IconBtn>
 
-        <NavbarThemeSwitcher />
-
         <VSpacer />
 
         <NavBarI18n

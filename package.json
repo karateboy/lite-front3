@@ -54,6 +54,7 @@
     "vue3-perfect-scrollbar": "2.0.0",
     "vuetify": "3.10.8",
     "vuex": "^4.0.2",
+    "vuex-composition-helpers": "^2.0.3",
     "webfontloader": "1.6.28"
   },
   "devDependencies": {

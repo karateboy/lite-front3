@@ -128,6 +128,9 @@ importers:
       vuex:
         specifier: ^4.0.2
         version: 4.0.2(vue@3.5.22(typescript@5.9.3))
+      vuex-composition-helpers:
+        specifier: ^2.0.3
+        version: 2.0.3(vue@3.5.22(typescript@5.9.3))(vuex@4.0.2(vue@3.5.22(typescript@5.9.3)))
       webfontloader:
         specifier: 1.6.28
         version: 1.6.28
@@ -4738,6 +4741,12 @@ packages:
         optional: true
       webpack-plugin-vuetify:
         optional: true
+
+  vuex-composition-helpers@2.0.3:
+    resolution: {integrity: sha512-tIkGHfUqA3dzq8ePBXUXfZldqgZOXr6hb6TF6M5bhR/5ls2fsqhPJiOygC40UKZe4w6pP7cJ1HiLrZaYckz4nw==}
+    peerDependencies:
+      vue: '>= 3.0.5'
+      vuex: '>= 4.0.0'
 
   vuex@4.0.2:
     resolution: {integrity: sha512-M6r8uxELjZIK8kTKDGgZTYX/ahzblnzC4isU1tpmEuOIIKmV+TRdc+H4s8ds2NuZ7wpUTdGRzJRtoj+lI+pc0Q==}
@@ -9929,6 +9938,11 @@ snapshots:
     optionalDependencies:
       typescript: 5.9.3
       vite-plugin-vuetify: 2.1.2(vite@7.1.12(@types/node@24.9.2)(sass@1.76.0)(tsx@4.20.6)(yaml@2.8.1))(vue@3.5.22(typescript@5.9.3))(vuetify@3.10.8)
+
+  vuex-composition-helpers@2.0.3(vue@3.5.22(typescript@5.9.3))(vuex@4.0.2(vue@3.5.22(typescript@5.9.3))):
+    dependencies:
+      vue: 3.5.22(typescript@5.9.3)
+      vuex: 4.0.2(vue@3.5.22(typescript@5.9.3))
 
   vuex@4.0.2(vue@3.5.22(typescript@5.9.3)):
     dependencies:

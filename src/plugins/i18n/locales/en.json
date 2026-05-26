@@ -6,6 +6,11 @@
   "25": "25",
   "50": "50",
   "100": "100",
+  "Logout": "Logout",
+  "Data Logger": "Data Logger",
+  "Login": "Login",
+  "User": "User",
+  "Password": "Password",
   "$vuetify": {
     "badge": "Badge",
     "noDataText": "No data available",

@@ -1,3 +1,11 @@
+<script setup lang="ts">
+definePage({
+  meta: {
+    public: false,
+    unauthenticatedOnly: true,
+  },
+})
+</script>
 <template>
   <div>
     <VCard

@@ -1,4 +1,5 @@
 import { setupLayouts } from 'virtual:meta-layouts'
+import { setupGuards } from './guards'
 import type { App } from 'vue'
 
 import type { RouteRecordRaw } from 'vue-router/auto'
@@ -29,6 +30,7 @@ const router = createRouter({
   ],
 })
 
+setupGuards(router)
 export { router }
 
 export default function (app: App) {
