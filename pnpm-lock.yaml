@@ -53,6 +53,9 @@ importers:
       apexcharts:
         specifier: 3.54.1
         version: 3.54.1
+      axios:
+        specifier: ^1.16.1
+        version: 1.16.1
       chart.js:
         specifier: 4.5.1
         version: 4.5.1
@@ -122,6 +125,9 @@ importers:
       vuetify:
         specifier: 3.10.8
         version: 3.10.8(typescript@5.9.3)(vite-plugin-vuetify@2.1.2)(vue@3.5.22(typescript@5.9.3))
+      vuex:
+        specifier: ^4.0.2
+        version: 4.0.2(vue@3.5.22(typescript@5.9.3))
       webfontloader:
         specifier: 1.6.28
         version: 1.6.28
@@ -1858,6 +1864,10 @@ packages:
     engines: {node: '>=0.4.0'}
     hasBin: true
 
+  agent-base@6.0.2:
+    resolution: {integrity: sha512-RZNwNclF7+MS/8bDg70amg32dyeZGZxiDuQmZxKLAlQjr3jGyLx+4Kkk58UO7D2QdgFIQCovuSuZESne6RG6XQ==}
+    engines: {node: '>= 6.0.0'}
+
   ajv@6.12.6:
     resolution: {integrity: sha512-j3fVLgvTo527anyYyJOGTYJbG+vnnQYvE0m5mmkc1TK+nxAppkCLMIL0aZ4dblVCNoGShhm+kzE4ZUykBoMg4g==}
 
@@ -1950,6 +1960,9 @@ packages:
 
   axios@1.13.1:
     resolution: {integrity: sha512-hU4EGxxt+j7TQijx1oYdAjw4xuIp1wRQSsbMFwSthCWeBQur1eF+qJ5iQ5sN3Tw8YRzQNKb8jszgBdMDVqwJcw==}
+
+  axios@1.16.1:
+    resolution: {integrity: sha512-caYkukvroVPO8KrzuJEb50Hm07KwfBZPEC3VeFHTsqWHvKTsy54hjJz9BS/cdaypROE2rH6xvm9mHX4fgWkr3A==}
 
   balanced-match@1.0.2:
     resolution: {integrity: sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==}
@@ -2759,12 +2772,25 @@ packages:
       debug:
         optional: true
 
+  follow-redirects@1.16.0:
+    resolution: {integrity: sha512-y5rN/uOsadFT/JfYwhxRS5R7Qce+g3zG97+JrtFZlC9klX/W5hD7iiLzScI4nZqUS7DNUdhPgw4xI8W2LuXlUw==}
+    engines: {node: '>=4.0'}
+    peerDependencies:
+      debug: '*'
+    peerDependenciesMeta:
+      debug:
+        optional: true
+
   for-each@0.3.5:
     resolution: {integrity: sha512-dKx12eRCVIzqCxFGplyFKJMPvLEWgmNtUrpTiJIR5u97zEhRG8ySrtboPHZXx7daLxQVrl643cTzbab2tkQjxg==}
     engines: {node: '>= 0.4'}
 
   form-data@4.0.4:
     resolution: {integrity: sha512-KrGhL9Q4zjj0kiUt5OO4Mr/A/jlI2jDYs5eHBpYHPcBEVSiipAvn2Ko2HnPe20rmcuuvMHNdZFp+4IlGTMF0Ow==}
+    engines: {node: '>= 6'}
+
+  form-data@4.0.5:
+    resolution: {integrity: sha512-8RipRLol37bNs2bhoV67fiTEvdTrbMUYcFTiy3+wuuOnUog2QBHCZWXDRijWQfAkhBj2Uf5UnVaiWwA5vdd82w==}
     engines: {node: '>= 6'}
 
   fs-minipass@2.1.0:
@@ -2937,6 +2963,10 @@ packages:
 
   htmlparser2@9.1.0:
     resolution: {integrity: sha512-5zfg6mHUoaer/97TxnGpxmbR7zJtPwIYFMZ/H5ucTlPZhKvtum05yiPK3Mgai3a0DyVxv7qYqoweaEd2nrYQzQ==}
+
+  https-proxy-agent@5.0.1:
+    resolution: {integrity: sha512-dFcAjpTQFgoLMzC2VwU+C/CbS7uRL0lWmxDITmqm7C+7F0Odmj6s9l6alZc6AELXhrnggM2CeWSXHGOdX2YtwA==}
+    engines: {node: '>= 6'}
 
   human-signals@8.0.1:
     resolution: {integrity: sha512-eKCa6bwnJhvxj14kZk5NCPc6Hb6BdsU9DZcOnmQKSnO1VKrfV0zCvtttPZUsBvjmNDn8rpcJfpwSYnHBjc95MQ==}
@@ -3800,6 +3830,10 @@ packages:
 
   proxy-from-env@1.1.0:
     resolution: {integrity: sha512-D+zkORCbA9f1tdWRK0RaCR3GPv50cMxcrz4X8k5LTSUD1Dkw47mKJEZQNunItRTkWwgtaUSo1RVFRIG9ZXiFYg==}
+
+  proxy-from-env@2.1.0:
+    resolution: {integrity: sha512-cJ+oHTW1VAEa8cJslgmUZrc+sjRKgAKl3Zyse6+PV38hZe/V6Z14TbCuXcan9F9ghlz4QrFr2c92TNF82UkYHA==}
+    engines: {node: '>=10'}
 
   psl@1.15.0:
     resolution: {integrity: sha512-JZd3gMVBAVQkSs6HdNZo9Sdo0LNcQeMNP3CozBJb3JYC/QUYZTnKxP+f8oWRX4rHP5EurWxqAHTSwUCjlNKa1w==}
@@ -4704,6 +4738,11 @@ packages:
         optional: true
       webpack-plugin-vuetify:
         optional: true
+
+  vuex@4.0.2:
+    resolution: {integrity: sha512-M6r8uxELjZIK8kTKDGgZTYX/ahzblnzC4isU1tpmEuOIIKmV+TRdc+H4s8ds2NuZ7wpUTdGRzJRtoj+lI+pc0Q==}
+    peerDependencies:
+      vue: ^3.0.2
 
   w3c-keyname@2.2.8:
     resolution: {integrity: sha512-dpojBhNsCNN7T82Tm7k26A6G9ML3NkhDsnw9n/eoxSRlVBB4CEtIQ/KTCLI2Fwf3ataSXRhYFkQi3SlnFwPvPQ==}
@@ -6527,6 +6566,12 @@ snapshots:
 
   acorn@8.15.0: {}
 
+  agent-base@6.0.2:
+    dependencies:
+      debug: 4.4.3
+    transitivePeerDependencies:
+      - supports-color
+
   ajv@6.12.6:
     dependencies:
       fast-deep-equal: 3.1.3
@@ -6651,6 +6696,16 @@ snapshots:
       proxy-from-env: 1.1.0
     transitivePeerDependencies:
       - debug
+
+  axios@1.16.1:
+    dependencies:
+      follow-redirects: 1.16.0
+      form-data: 4.0.5
+      https-proxy-agent: 5.0.1
+      proxy-from-env: 2.1.0
+    transitivePeerDependencies:
+      - debug
+      - supports-color
 
   balanced-match@1.0.2: {}
 
@@ -7680,11 +7735,21 @@ snapshots:
 
   follow-redirects@1.15.11: {}
 
+  follow-redirects@1.16.0: {}
+
   for-each@0.3.5:
     dependencies:
       is-callable: 1.2.7
 
   form-data@4.0.4:
+    dependencies:
+      asynckit: 0.4.0
+      combined-stream: 1.0.8
+      es-set-tostringtag: 2.1.0
+      hasown: 2.0.2
+      mime-types: 2.1.35
+
+  form-data@4.0.5:
     dependencies:
       asynckit: 0.4.0
       combined-stream: 1.0.8
@@ -7881,6 +7946,13 @@ snapshots:
       domhandler: 5.0.3
       domutils: 3.2.2
       entities: 4.5.0
+
+  https-proxy-agent@5.0.1:
+    dependencies:
+      agent-base: 6.0.2
+      debug: 4.4.3
+    transitivePeerDependencies:
+      - supports-color
 
   human-signals@8.0.1: {}
 
@@ -8779,6 +8851,8 @@ snapshots:
   protocol-buffers-schema@3.6.0: {}
 
   proxy-from-env@1.1.0: {}
+
+  proxy-from-env@2.1.0: {}
 
   psl@1.15.0:
     dependencies:
@@ -9855,6 +9929,11 @@ snapshots:
     optionalDependencies:
       typescript: 5.9.3
       vite-plugin-vuetify: 2.1.2(vite@7.1.12(@types/node@24.9.2)(sass@1.76.0)(tsx@4.20.6)(yaml@2.8.1))(vue@3.5.22(typescript@5.9.3))(vuetify@3.10.8)
+
+  vuex@4.0.2(vue@3.5.22(typescript@5.9.3)):
+    dependencies:
+      '@vue/devtools-api': 6.6.4
+      vue: 3.5.22(typescript@5.9.3)
 
   w3c-keyname@2.2.8: {}
 
