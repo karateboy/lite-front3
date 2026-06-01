@@ -1,7 +1,6 @@
 import { createApp } from 'vue'
 
 import App from '@/App.vue'
-import store from '@/store'
 import { registerPlugins } from '@core/utils/plugins'
 
 // Styles
@@ -13,6 +12,5 @@ const app = createApp(App)
 
 // Register plugins
 registerPlugins(app)
-app.use(store)
 // Mount vue app
 app.mount('#app')
